@@ -1,21 +1,42 @@
 @use 'sass:color';
 
-$bg: #488e53;
-$text: #fff;
+$recipeBg: #ffffff;
+$bg: var(--stone-100);
 
 .container {
+  background: $bg;
   display: flex;
-  align-items: center;
   justify-content: center;
+  width: 100vw;
   height: 100vh;
-  background: color.adjust($bg, $lightness: 40%);
 }
 
-.banner {
-  padding: 1rem 2rem;
-  background: $bg;
-  color: $text;
-  font-size: 2rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+.recipeCard {
+  display: flex;
+  flex-direction: column;
+  background: $recipeBg;
+  @media (min-width: 768px) {
+    margin: 7em 4em;
+    border-radius: 12px;
+  }
+
+  @media (min-width: 1440px) {
+    margin: 10em 40em;
+  }
+}
+
+.heroImgWrapper {
+  @media (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+  }
+}
+
+.heroImg {
+  width: 100%;
+  @media (min-width: 768px) {
+    border-radius: 12px;
+  }
 }
