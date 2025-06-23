@@ -21,6 +21,28 @@ const Home: React.FC = () => {
           <p className={styles.recipeDescription}>
             {recipeDetails.description}
           </p>
+
+          <div className={styles.prepWrapper}>
+            <p className={styles.prepTitle}>Preparation time</p>
+            <ul className={styles.prepItems}>
+              <li>
+                <p className={styles.prepDescription}>
+                  <span className={styles.bolded}>Total:</span> Approximately 10
+                  minutes
+                </p>
+              </li>
+              <li>
+                <p className={styles.prepDescription}>
+                  <span className={styles.bolded}>Preparation:</span> 5 minutes
+                </p>
+              </li>
+              <li>
+                <p className={styles.prepDescription}>
+                  <span className={styles.bolded}>Cooking:</span> 5 minutes
+                </p>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
