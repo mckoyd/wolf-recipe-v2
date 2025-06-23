@@ -1,5 +1,7 @@
 @use 'sass:color';
 
+@import '../styles/index.scss';
+
 $recipeBg: #ffffff;
 $bg: var(--stone-100);
 
@@ -21,7 +23,7 @@ $bg: var(--stone-100);
   }
 
   @media (min-width: 1440px) {
-    margin: 10em 40em;
+    margin: 10em 25%;
   }
 }
 
@@ -39,4 +41,25 @@ $bg: var(--stone-100);
   @media (min-width: 768px) {
     border-radius: 12px;
   }
+}
+
+.recipeDetailsWrapper {
+  padding: 0 2em 2em 2em;
+}
+
+.recipeName {
+  font-size: 2em;
+  line-height: 100%;
+  letter-spacing: 0;
+  font-family: 'Young Serif';
+  color: var(--stone-900);
+  font-weight: 400;
+}
+
+.recipeDescription {
+  font-family: 'Outfit';
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 150%;
+  color: var(--stone-600);
 }

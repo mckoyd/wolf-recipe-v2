@@ -1,10 +1,9 @@
 @use 'utils';
 @use 'fonts';
 
-/* normalize browser styles */
 @import 'normalize.css';
 
-/* Global site styles */
+/* 3) Global resets */
 *,
 *::before,
 *::after {
@@ -18,35 +17,32 @@
   --stone-900: #312e2c;
   --stone-600: #5f564d;
   --stone-150: #e3ddd7;
-  --stone-100: #f3e5d7;
+  --stone-100: #e3ddd7;
   --brown: #854632;
   --white: #ffffff;
 
-  /* Typography */
-  // Preset 1
+  /* Typography tokens */
   --text-1-size: #{utils.px2rem(40)};
   --text-1-line-height: 1;
   --text-1-letter: 0em;
 
-  // Preset 2
   --text-2-size: #{utils.px2rem(28)};
   --text-2-line-height: 1;
   --text-2-letter: 0em;
 
-  // Preset 3
   --text-3-size: #{utils.px2rem(20)};
   --text-3-line-height: 1;
   --text-3-letter: 0em;
 
-  // Preset 4
   --text-4-size: #{utils.px2rem(16)};
   --text-4-line-height: 1.5;
   --text-4-letter: 0em;
 }
 
+/* 6) Base body styling */
 body {
   margin: 0;
-  font-family: 'Outfit', 'sans-serif';
+  font-family: 'Outfit', sans-serif;
   background: var(--white);
   color: var(--stone-900);
 }

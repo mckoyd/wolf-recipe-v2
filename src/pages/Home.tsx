@@ -2,6 +2,7 @@ import React from 'react';
 import styles from '../styles/Home.module.scss';
 
 import omeletteImg from '../assets/images/image-omelette.jpeg';
+import { recipeDetails } from '../config/Home.config';
 
 const Home: React.FC = () => {
   return (
@@ -13,6 +14,13 @@ const Home: React.FC = () => {
             alt="A picture of an omlette"
             className={styles.heroImg}
           />
+        </div>
+
+        <div className={styles.recipeDetailsWrapper}>
+          <p className={styles.recipeName}>{recipeDetails.name}</p>
+          <p className={styles.recipeDescription}>
+            {recipeDetails.description}
+          </p>
         </div>
       </div>
     </div>
