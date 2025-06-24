@@ -1,6 +1,9 @@
 import React from 'react';
 import styles from '../styles/RecipeCard.module.scss';
-import { recipeDetails } from '../config/RecipeCard.config';
+import {
+  nutritionFactsLength,
+  recipeDetails,
+} from '../config/RecipeCard.config';
 import PrepTimeSection from './PrepTimeSection';
 
 const RecipeCard: React.FC = () => {
@@ -35,6 +38,24 @@ const RecipeCard: React.FC = () => {
         ))}
       </ol>
       <hr className={styles.divider} />
+      <p className={styles.nutritionTitle}>Nutrition</p>
+      <p className={styles.nutritionDescription}>
+        The table below shows nutritional values per serving without the
+        additional fillings.
+      </p>
+      <div className={styles.nutritionTable}>
+        {recipeDetails.nutritionFacts.map(({ title, value }, index) => (
+          <div className={styles.rowWrapper} key={`${title}-${index}`}>
+            <div className={styles.nutritionRow}>
+              <p className={styles.nutritionRowTitle}>{title}</p>
+              <p className={styles.nutritionRowValue}>{value}</p>
+            </div>
+            {nutritionFactsLength - 1 !== index && (
+              <hr className={styles.tableDivider} />
+            )}
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

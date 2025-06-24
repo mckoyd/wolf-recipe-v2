@@ -35,4 +35,24 @@ export const recipeDetails = {
       text: 'Serve hot, with additional salt and pepper if needed.',
     },
   ],
+  nutritionFacts: [
+    {
+      title: 'Calories',
+      value: '277kcal',
+    },
+    {
+      title: 'Carbs',
+      value: '0g',
+    },
+    {
+      title: 'Protein',
+      value: '20g',
+    },
+    {
+      title: 'Fat',
+      value: '22g',
+    },
+  ],
 };
+
+export const nutritionFactsLength = recipeDetails.nutritionFacts.length;

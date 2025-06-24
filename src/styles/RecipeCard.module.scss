@@ -23,7 +23,8 @@
 }
 
 .ingredientsTitle,
-.instructionsTitle {
+.instructionsTitle,
+.nutritionTitle {
   font-family: 'Young Serif';
   font-style: normal;
   font-weight: 400;
@@ -66,4 +67,55 @@
   border: 1px solid var(--stone-150);
   width: 100%;
   margin-top: 2em;
+}
+
+.nutritionDescription {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 150%;
+  color: var(--stone-600);
+}
+
+.nutritionTable {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.nutritionRow {
+  display: flex;
+  align-items: center;
+  padding: 1em 2em;
+}
+
+.nutritionRowTitle,
+.nutritionValue {
+  width: 50%;
+}
+
+.nutritionRowTitle {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--stone-600);
+}
+
+.nutritionRowValue {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+
+  color: var(--brown);
+}
+
+.tableDivider {
+  border: 1px solid var(--stone-150);
+  width: 100%;
 }
