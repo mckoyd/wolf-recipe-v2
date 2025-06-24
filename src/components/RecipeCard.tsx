@@ -22,6 +22,19 @@ const RecipeCard: React.FC = () => {
           </li>
         ))}
       </ul>
+      <hr className={styles.divider} />
+      <p className={styles.instructionsTitle}>Instructions</p>
+      <ol className={styles.instructions}>
+        {recipeDetails.instructions.map(({ boldedText, text }, index) => (
+          <li className={styles.instructionWrapper} key={`${index}`}>
+            <p className={styles.instruction}>
+              <span className={styles.bolded}>{boldedText}</span>
+              {text}
+            </p>
+          </li>
+        ))}
+      </ol>
+      <hr className={styles.divider} />
     </div>
   );
 };

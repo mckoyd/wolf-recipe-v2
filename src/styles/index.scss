@@ -47,3 +47,23 @@ body {
   background: var(--white);
   color: var(--stone-900);
 }
+
+ul li::marker,
+ol li::marker {
+  color: var(--brown);
+
+  font-family: 'Outfit';
+  font-weight: 700;
+  font-size: 1em;
+  line-height: 150%;
+}
+
+ul li::marker {
+  color: var(--brown);
+  font-size: 1em;
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1em;
+  line-height: 150%;
+}
