@@ -1,0 +1,45 @@
+.prepWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  background: var(--rose-50);
+  padding: 2em;
+  border-radius: 12px;
+}
+
+.prepTitle {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  color: var(--rose-800);
+}
+
+.prepItems {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-inline-start: 1em;
+  margin-inline-start: 0;
+  padding-inline-start: 1em;
+  list-style-position: outside;
+
+  & li {
+    padding-inline-start: 1.5em;
+    line-height: var(--text-4-line-height);
+  }
+}
+
+.prepDescription {
+  font-family: 'Outfit';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--stone-600);
+}
+
+.bolded {
+  font-weight: 700;
+}
