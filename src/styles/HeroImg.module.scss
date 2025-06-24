@@ -1,5 +1,5 @@
 .heroImgWrapper {
-  @media (min-width: 768px) {
+  @media (min-width: 48rem) {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,7 +9,7 @@
 
 .heroImg {
   width: 100%;
-  @media (min-width: 768px) {
+  @media (min-width: 48rem) {
     border-radius: 12px;
   }
 }

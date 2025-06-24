@@ -1,7 +1,6 @@
+@import 'normalize.css';
 @use 'utils';
 @use 'fonts';
-
-@import 'normalize.css';
 
 /* 3) Global resets */
 *,
@@ -52,7 +51,7 @@ ul li::marker,
 ol li::marker {
   color: var(--brown);
 
-  font-family: 'Outfit';
+  font-family: 'Outfit', sans-serif;
   font-weight: 700;
   font-size: 1em;
   line-height: 150%;
@@ -61,7 +60,7 @@ ol li::marker {
 ul li::marker {
   color: var(--brown);
   font-size: 1em;
-  font-family: 'Outfit';
+  font-family: 'Outfit', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 1em;
